@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+/***HEADER***/
+
+nav{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 98;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    padding: 7px 10px 7px 10px;
+    justify-content: space-between;
+}
+
+.flex > a{
+    display: none;
+}
+
+.logo{
+    width: 35px;
+}
+
+/******/
+
+/***Menu burger***/
+
+.menu{
+    transform: translateY(-100%);
+    background-color: rgb(20, 20, 20);
+    position: fixed;    /*Empeche le scroll*/
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.menu > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > div > img{
+    display: none;
+}
+
+.menu > div > a{
+    text-decoration: none;
+    color: rgb(55, 226, 175);
+    margin: 20px;
+    font-size: 24pt;
+    font-weight: 200;
+}
+
+.menu > div > svg{
+    margin-top: 50px;
+}
+
+.x{
+    transform: translate(0%);
+}
+
+/*Empecher le scroll quand le menu deroulant et ouvert*/
+
+.noscroll{
+    overflow-y: hidden;
+}
+
+
+/******/
+
+/***Conteu***/
+
+.galerie{
+    display: flex;
+    overflow: auto;
+}
+
+.garde{
+    cursor: pointer;
+}
+
+.galerie > .garde > img{
+    height: calc(100vh - 47px);
+    clip-path: circle(100% at 50% 50%);
+    transition: 0.4s;
+    filter: grayscale(1.0);
+}
+
+.garde:hover > img{
+    clip-path: circle(40.5% at 50% 50%);
+    filter: grayscale(0);
+}
+
+.zone{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24pt;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #202020;
+    padding: 20px;
+}
+
+.divise{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divise > div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.3em;
+}
+
+.divise > div > a{
+    padding: 0.8em 0em 0em 0;
+}
+
+.divise > div > h4, .abo > div > h4{
+    color: #a0a0a0;
+}
+
+.divise > div > a, .abo > div > p, .fin > p{
+    color: rgba(216, 216, 216, 0.425);
+    font-weight: 300;
+}
+
+form{
+    display: flex;
+}
+
+form > input:nth-child(1){
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 5px;
+}
+
+form > input:nth-child(2){
+    background-color: rgb(55, 226, 175);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0 15px 0 15px;
+    font-weight: 600;
+    color: #202020;
+    cursor: pointer;
+}
+
+footer > div:nth-child(2){
+    border-top: 1px solid rgba(216, 216, 216, 0.425);
+    border-bottom: 1px solid rgba(216, 216, 216, 0.425);
+}
+
+.abo > div:nth-child(1) > h4{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.abo{
+    padding: 1.33em 0 1.33em 0;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+}
+
+.reseaux > a > svg{
+    margin: 0 10px 0 10px;
+}

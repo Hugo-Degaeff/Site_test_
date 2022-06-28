@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+/***HEADER***/
+
+nav{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 98;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    padding: 7px 10px 7px 10px;
+    justify-content: space-between;
+}
+
+.flex > a{
+    display: none;
+}
+
+.logo{
+    width: 35px;
+}
+
+/******/
+
+/***Menu burger***/
+
+.menu{
+    transform: translateY(-100%);
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.menu > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > div > img{
+    display: none;
+}
+
+.menu > div > a{
+    text-decoration: none;
+    color: rgb(55, 226, 175);
+    margin: 20px;
+    font-size: 24pt;
+    font-weight: 200;
+}
+
+.menu > div > svg{
+    margin-top: 50px;
+}
+
+.x{
+    transform: translate(0%);
+}
+
+/*Empecher le scroll quand le menu deroulant et ouvert*/
+
+.noscroll{
+    overflow-y: hidden;
+}
+
+/******/
+
+h2{
+    margin-block-start: 0px;
+    margin-block-end: 30px;
+    font-size: 22pt;
+}
+
+.ctct{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.ctct > div:nth-child(1){
+    margin: 20px;
+}
+
+/*Formulaire*/
+
+input{
+    box-sizing: border-box;
+    border: 0px;
+    background-color: rgb(233, 233, 233);
+    font-weight: 300;
+    font-family: 'Roboto';
+    padding: 7px;
+    font-size: 11pt;
+}
+
+.nom{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nom>input{
+    width: 100%;
+}
+
+.nom > input:nth-child(1){
+    margin-right: 10px;
+}
+
+.mail{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.description{
+    max-width: 0px;
+    min-width: 100%;
+    min-height: 150px;
+    margin-top: 10px;
+    background-color: rgb(233, 233, 233);
+    font-weight: 300;
+    border: 0px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    font-size: 11pt;
+    padding: 7px;
+}
+
+.envoie{
+    padding: 7px 14px 7px 14px;
+    background-color: rgb(55, 226, 175);
+    border: none;
+    margin-top: 10px;
+    color: black;
+}
+
+.formulaire{
+    width: 100%;
+}
+
+#map{
+    height: 50vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.envoie{
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 400;
+}
+
+.envoie:hover{
+    background-color: #202020;
+    color: white;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #202020;
+    padding: 20px;
+}
+
+.divise{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divise > div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.3em;
+}
+
+.divise > div > a{
+    padding: 0.8em 0em 0em 0;
+}
+
+.divise > div > h4, .abo > div > h4{
+    color: #a0a0a0;
+}
+
+.divise > div > a, .abo > div > p, .fin > p{
+    color: rgba(216, 216, 216, 0.425);
+    font-weight: 300;
+}
+
+.miniform{
+    display: flex;
+}
+
+.miniform > input:nth-child(1){
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 5px;
+}
+
+.miniform > input:nth-child(2){
+    background-color: rgb(55, 226, 175);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0 15px 0 15px;
+    font-weight: 600;
+    color: #202020;
+    cursor: pointer;
+}
+
+footer > div:nth-child(2){
+    border-top: 1px solid rgba(216, 216, 216, 0.425);
+    border-bottom: 1px solid rgba(216, 216, 216, 0.425);
+}
+
+.abo > div:nth-child(1) > h4{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.abo{
+    padding: 1.33em 0 1.33em 0;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+}
+
+.reseaux > a > svg{
+    margin: 0 10px 0 10px;
+}

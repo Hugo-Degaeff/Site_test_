@@ -1,0 +1,14 @@
+@media screen and (min-width: 1000px){
+    .abo{
+        display: flex;
+        align-items: center;
+    }
+    
+    form{
+        margin-left: auto;
+    }
+
+    form > input:nth-child(1){
+        width: 220px;
+    }
+}

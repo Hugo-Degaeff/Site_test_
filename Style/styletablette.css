@@ -1,0 +1,66 @@
+@media screen and (min-width: 800px){
+    
+    header{
+        display: none;
+    }
+
+    /*Empecher le scroll quand le menu deroulant et ouvert*/
+
+    .noscroll{
+        overflow-y: hidden;
+    }
+
+    .flex > a{
+        display: block;
+    }
+
+    .flex > svg{
+        display: none;
+    }
+
+    .flex > img{
+        margin-right: auto;
+    }
+
+    .flex{
+        justify-content: flex-end;
+        padding: 7px 0px 7px 0px;
+    }
+
+    .flex > *{
+        margin: 10px 25px 10px 25px;
+        color: rgb(55, 226, 175);
+        font-weight: 200;
+        text-decoration: none;
+    }
+
+    .flex > a{
+        color: rgb(55, 226, 175);
+        font-weight: 200;
+        text-decoration: transparent;   /*Permet une transition*/
+        transition: 0.3s;
+    }
+
+    .flex > a:hover{
+        text-decoration: 2px underline rgb(33, 148, 255);
+    }
+
+    .galerie > .garde > img{
+        height: calc(100vh - 67px);
+    }
+
+    /*Footer*/
+    
+    .divise{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .fin{
+        display: flex;
+        align-items: center;
+    }
+    
+    .fin > div{
+        margin-left: auto;
+    }
+}
